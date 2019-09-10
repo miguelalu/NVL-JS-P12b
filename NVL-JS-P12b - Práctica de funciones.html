@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica de bucles (II)</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	var numerosPares = [];
+	var numerosImpares = [];
+
+	for (var i = 0; i < 50; i++) {
+		var aleatorio = Math.floor((Math.random() * 100) + 1);
+		if ( pares(aleatorio) ) {
+			numerosPares.push(aleatorio);
+		} 	else {numerosImpares.push(aleatorio);
+			}
+	}	
+
+		document.write(numerosPares + "<br>");
+		document.write(numerosImpares + "<br>");
+
+	function pares(numero) {
+		if (numero % 2 === 0) {
+			return true;
+		}
+	} 
+
+	</script>
+	
+</body>
+</html>
